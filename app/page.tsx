@@ -1,6 +1,8 @@
 import Image from "next/image";
 
+ 
 export default function Home() {
+
   return (
     <header className="Hero">
       <main className="main-class">
@@ -51,3 +53,4 @@ export default function Home() {
 
   );
 }
+
