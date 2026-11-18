@@ -9,16 +9,16 @@ export default function Home() {
         <section className="">
           <div>
             <div className="container-hero max-w-xl mx-auto md:mx-0">
-              <p className="text-hello text-3xl text-[#12D22A]">¡_ Bienvenido, &#128075;.</p>
+              <p className="text-hello text-3xl text-[#12D22A]">¡_ Bienvenido. &#128075;.</p>
 
               <div className="md:pl-10">
-                <h1>
-                  Soy <span className="nombre text-4xl">Ramón García</span>
+                <h1 className="text-4xl gradient-text">
+                  Soy <span className="nombre text-4xl font-bold bg-gradient-to-r from-fuchsia-500 via-violet-500 to-blue-500 bg-clip-text text-transparent">Ramón García</span>
                 </h1>
               </div>
 
-              <div>
-                <h2 className="text-xl">Desarrollador Web.</h2>
+              <div >
+                <h2 className="text-4xl">Desarrollador Web.</h2>
               </div>
 
               <div className="my-information text-xl">
