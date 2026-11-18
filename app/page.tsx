@@ -9,7 +9,7 @@ export default function Home() {
         <section className="">
           <div>
             <div className="container-hero max-w-xl mx-auto md:mx-0">
-              <p className="text-hello text-3xl">¡Hola! &#128075;.</p>
+              <p className="text-hello text-3xl text-[#12D22A]">¡_ Bienvenido, &#128075;.</p>
 
               <div className="md:pl-10">
                 <h1>
@@ -18,12 +18,12 @@ export default function Home() {
               </div>
 
               <div>
-                <h2 className="text-xl">Diseño y construyo interfaces.</h2>
+                <h2 className="text-xl">Desarrollador Web.</h2>
               </div>
 
               <div className="my-information text-xl">
-                <p>Begginer Web Developer</p>
-                <p>Graduado en Ingeniería en Sistemas C.</p>
+                <p>Apasionado por la tecnología, el diseño</p>
+                <p>y la creación de experiencias digitales.</p>
                 <p>Abierto a aprender nuevas tecnologías y lenguajes.</p>
               </div>
 
@@ -33,7 +33,7 @@ export default function Home() {
                 <a href="/Portfolio">
                   <button className="bg-[#7c3aed] text-white font-serif text-sm rounded-full cursor-pointer h-11 w-36 sm:h-[45px] sm:w-[170px] border-none"
                   >
-                    Ver mi portafolio
+                    Explorar mi trabajo
                   </button>
                 </a>
               </div>
@@ -41,7 +41,7 @@ export default function Home() {
           </div>
         </section>
         <section className="">
-              <h1>hi</h1>
+          <h1>hi</h1>
         </section>
       </main>
     </header>
