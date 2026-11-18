@@ -9,21 +9,21 @@ export default function Home() {
         <section className="">
           <div>
             <div className="container-hero max-w-xl mx-auto md:mx-0">
-              <p className="text-hello text-3xl text-[#12D22A]">¡_ Bienvenido. &#128075;.</p>
+              <p className="text-hello text-xl text-[#12D22A]">¡<span className="guion-p animate-blink">_</span> Bienvenido. &#128075;.</p>
 
               <div className="md:pl-10">
-                <h1 className="text-4xl gradient-text">
-                  Soy <span className="nombre text-4xl font-bold bg-gradient-to-r from-fuchsia-500 via-violet-500 to-blue-500 bg-clip-text text-transparent">Ramón García</span>
+                <h1 className="text-5xl gradient-text">
+                  Soy <span className="nombre text-5xl font-bold bg-gradient-to-r from-fuchsia-500 via-violet-500 to-blue-500 bg-clip-text text-transparent">Ramón García</span>
                 </h1>
               </div>
 
               <div >
-                <h2 className="text-4xl">Desarrollador Web.</h2>
+                <h2 className="text-5xl">Desarrollador Web.</h2>
               </div>
-
+              <br />
               <div className="my-information text-xl">
-                <p>Apasionado por la tecnología, el diseño</p>
-                <p>y la creación de experiencias digitales.</p>
+                <p>Apasionado por la tecnología, el diseño<br />y la creación de experiencias digitales.
+                </p>
                 <p>Abierto a aprender nuevas tecnologías y lenguajes.</p>
               </div>
 
@@ -33,7 +33,7 @@ export default function Home() {
                 <a href="/Portfolio">
                   <button className="bg-[#7c3aed] text-white font-serif text-sm rounded-full cursor-pointer h-11 w-36 sm:h-[45px] sm:w-[170px] border-none"
                   >
-                    Explorar mi trabajo
+                    Explorar mi trabajo &#8594;
                   </button>
                 </a>
               </div>

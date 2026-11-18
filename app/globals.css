@@ -41,3 +41,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@theme {
+  --animate-blink: blink 0.8s step-end infinite;
+
+  @keyframes blink {
+    100% {
+      opacity: 0;
+    }
+  }
+}
