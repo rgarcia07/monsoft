@@ -44,8 +44,8 @@ body {
 
 
 @theme {
-  --animate-blink: blink 0.8s step-end infinite;
-
+  --animate-blink: blink 0.8s steps(1, end) infinite;
+  
   @keyframes blink {
     100% {
       opacity: 0;
