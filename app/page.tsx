@@ -14,7 +14,7 @@ export default function Home() {
     items-center md:items-center
     justify-between
     gap-10
-    w-full max-w-[1040px]
+    w-full max-w-[1080px]
     min-h-[300px] md:min-h-[440px]
     mx-auto
     p-5 sm:p-7 md:p-10
@@ -29,7 +29,7 @@ export default function Home() {
               &gt;<span className="animate-blink">_</span> Bienvenido. 👋
             </p>
 
-            <div className="mt-6 md:pl-4">
+            <div className="mt-15 md:pl-4">
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-normal">
                 Soy{" "}

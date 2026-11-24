@@ -14,7 +14,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="es"
     >
-      <body className="min-h-full flex flex-col">
+      <body>
         <Navbar />
         {children}
         <Spacebar />
