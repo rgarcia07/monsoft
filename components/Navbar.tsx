@@ -1,13 +1,13 @@
 
 import Image from "next/image";
 
-export default function Navbar() {
+export default function navBar() {
     
 
     
     return (
         <header className="mx-10 my-10">
-            <nav className="navBar-hero h-16 w-full max-w-[1000px] mx-auto rounded-full border border-[#1D182B] bg-[#0B0713] flex items-center justify-between px-7">                
+            <nav className="navBar-hero h-16 w-full max-w-[1200px] mx-auto rounded-full border border-[#1D182B] bg-[#0B0713] flex items-center justify-between px-7">                
                 <div className="flex items-center">
                 <a href="/">
                     <img
