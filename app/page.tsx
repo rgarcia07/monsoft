@@ -4,12 +4,25 @@ import Image from "next/image";
 export default function Home() {
 
   return (
-    <header className="Hero">
-      <main className="main-class flex flex-row p-7 Section-head w-full max-w-[1040px] h-auto min-h-[h-300] md:h-[440px] mx-auto ">
-        <section className="">
+    <header className="Hero relative min-h-screen bg-[#080817]">
+      <main className="absolute inset-0 
+      bg-[linear-gradient(to_right,rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.07)_1px,transparent_1px)] 
+      bg-[size:45px_45px] 
+      [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_80%)] 
+      main-class 
+      flex flex-row 
+      p-7 
+      Section-head 
+      w-full 
+      max-w-[1040px] 
+      h-auto 
+      min-h-[h-300] 
+      md:h-[440px] 
+      mx-auto ">
+        <section className=" ">
           <div>
             <div className="container-hero max-w-xl mx-auto md:mx-0">
-              <p className="text-hello text-xl text-[#12D22A]">¡<span className="guion-p animate-blink">_</span> Bienvenido. &#128075;.</p>
+              <p className="text-hello text-xl text-[#12D22A]">&gt;<span className="guion-p animate-blink">_</span> Bienvenido, &#128075;.</p>
 
               <div className="md:pl-10">
                 <h1 className="text-5xl gradient-text">
