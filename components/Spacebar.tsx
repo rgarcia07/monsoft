@@ -1,125 +1,56 @@
-"use client";
+import LogoLoop from './LogoLoop';
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiLaravel } from 'react-icons/si';
 
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaLaravel
-} from "react-icons/fa";
+const techLogos = [
+  { node: <SiReact />, title: "React", href: "https://react.dev", hoverColor: "#61dafb" },
+  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
+  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org", hoverColor: "#3178c6" },
+  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com", hoverColor: "#38bdf8" },
+];
 
-import {
-  SiTypescript,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiAstro,
-  SiLaravel
-} from "react-icons/si";
+const techLogos2 = [
 
-const technologies = [
-  {
-    name: "HTML5",
-    icon: FaHtml5,
-    color: "#E34F26",
-    url: "https://developer.mozilla.org/es/docs/Web/HTML"
-  },
+  { node: <SiLaravel />, title: "Laravel", href: "https://laravel.com/", hoverColor: "#F05340" },
 
-  {
-    name: "CSS3", icon: FaCss3Alt,
-    color: "#1572B6",
-    url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
-  },
-
-  {
-    name: "JavaScript", icon: FaJs,
-    color: "#F7DF1E",
-    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-  },
-
-  {
-    name: "TypeScript", icon: SiTypescript,
-    color: "#3178C6",
-    url: "https://www.typescriptlang.org/"
-  },
-
-  {
-    name: "React", icon: FaReact,
-    color: "#61DAFB",
-    url: "https://react.dev/"
-  },
-
-  {
-    name: "Next.js", icon: SiNextdotjs,
-    color: "#FFFFFF",
-    url: "https://nextjs.org/"
-  },
-
-  {
-    name: "Tailwind", icon: SiTailwindcss,
-    color: "#06B6D4",
-    url: "https://tailwindcss.com/"
-  },
-
-  {
-    name: "Astro", icon: SiAstro,
-    color: "#FF5D01",
-    url: "https://astro.build/"
-  },
-
-  {
-    name: "Git", icon: FaGitAlt,
-    color: "#F05032",
-    url: "https://git-scm.com/"
-  },
-
-  {
-    name: "Laravel", icon: FaLaravel,
-    color: "#FF2D20",
-    url: "https://laravel.com/"
-  },
 ];
 
 
+
 export default function Spacebar() {
-
   return (
-    <section className="w-full overflow-hidden py-8">
-
-      <div className="flex w-max animate-marquee">
-
-        {[...technologies, ...technologies].map((tech, index) => {
-          const Icon = tech.icon;
-
-          return (
-
-            <a
-              key={`${tech.name}-${index}`}
-              href={tech.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              title={`Visitar ${tech.name}`}
-
-              className="mx-8 flex items-center gap-3
-              transition-transform duration-300
-              hover:scale-110"
-            >
-              <Icon className="text-3xl"
-                style={{ color: tech.color }}
-              />
-
-              <span className="text-white text-lg font-medium">
-                {tech.name}
-              </span>
-            </a>
-          );
-        })}
-
-      </div>
-
-
-    </section>
+    <div style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
+      <LogoLoop
+        logos={techLogos}
+        speed={40}
+        direction="left"
+        logoHeight={44}
+        gap={56}
+        hoverSpeed={0}
+        scaleOnHover={false}
+        ariaLabel="Technology partners"
+        layout="line"
+        bend={0.5}
+        magnify={0}
+        labels="inline"
+        muted={0}
+      />
+      <LogoLoop
+        logos={techLogos2}
+        speed={40}
+        direction="right"
+        logoHeight={44}
+        gap={56}
+        hoverSpeed={0}
+        scaleOnHover={false}
+        ariaLabel="Technology partners"
+        layout="line"
+        bend={0.5}
+        magnify={0}
+        labels="inline"
+        muted={0}
+      />
+      
+    </div>
+    
   );
-
 }
